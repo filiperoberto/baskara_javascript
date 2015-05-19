@@ -17,12 +17,14 @@
 			
 			$('body').on('submit','#form',function(){
 			
-				var a = this.a.value;
-				var b = this.b.value;
-				var c = this.c.value;
+				var a = parseInt(this.a.value);
+				var b = parseInt(this.b.value);
+				var c = parseInt(this.c.value);
+				
+				var delta = Math.sqrt((b*b) - (4*a*c));
 			
-				var x1 = ((Math.sqrt((b*b) - (4*a*c))) - b)/2*a;
-				var x2 = ((Math.sqrt((b*b) - (4*a*c))) + b)/2*a;
+				var x1 = (- b - delta )/2*a;
+				var x2 = (- b + delta )/2*a;
 			
 				var text = "<strong>y = "+a +"x² + "+b+"x + "+c+"</strong> -> x1 = "+x1+" x2 = "+x2;
 			
