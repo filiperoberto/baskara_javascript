@@ -1,2 +1,2 @@
-# baskara_javascript
-Baskara Javascript
+# Bhaskara em Javascript
+
